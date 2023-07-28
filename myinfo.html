@@ -1,0 +1,16 @@
+1. Get your working space ready:
+
+In GitHub, create a new repository called assignment4
+Clone the repository to work with it locally
+Create a new branch called "workinprogress" and switch to it
+Create the file `myinfo.html` and add the "Assignment4" content.
+Create a directory with the name "data"
+Inside the data directory, create the file "dummy-content.txt" (You can leave it empty or add whatever you want to it)
+Create a Containerfile with the following requirements:
+Base image fedora:latest
+Run an upgrade of the system using the dnf command
+Install the tuxpaint, vim,and httpd applications.
+Add the myinfo.html file to the container at the /var/www/html/ location.
+Expose port 80/tcp.
+Enable the httpd service using the following directive.
+ENTRYPOINT /usr/sbin/httpd -DFOREGROUND
